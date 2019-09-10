@@ -1,4 +1,3 @@
-//Global variables for each command
 require("dotenv").config();
 var fs = require("fs");
 var axios = require("axios");
@@ -16,7 +15,6 @@ function dispatch(command) {
     }
 }
 
-//movie-this
 function searchMovie() {
     if(!userInput){
         var queryUrl = "http://www.omdbapi.com/?t=Mr.+Nobody&y=&plot=short&apikey=trilogy";
